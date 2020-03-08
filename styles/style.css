@@ -1,0 +1,82 @@
+/*元素选择器: 所有指定类型的元素*/
+p, image {
+    color: deeppink;
+}
+
+/*ID选择器: 具有特定Id的元素，单一页面中，一个Id对应一个元素*/
+#my-id {
+    font-size: larger;
+}
+
+/*类选择器：具有特定类的元素：单一页面中，一个类可以有多个实例*/
+.my-class {
+    background: greenyellow;
+}
+
+/*属性选择器： 拥有特定属性的元素*/
+img[src] {
+    width: 300px;
+}
+
+/*伪（pseudo）类选择器： 特定状态下的特定元素，如鼠标指针悬浮*/
+a:hover {
+    font-weight: bold;
+}
+
+/*页面中css*/
+html {
+    font-size: 10px;
+    /*字体*/
+    font-family: 'Open Sans', sans-serif;
+    background-color: #00559F;
+}
+
+body {
+    width: 2763px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0px 20px 20px 20px;
+    border: 5px solid black;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px white;
+    font-size: 60px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 6px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: "§";
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+img[src] {
+    width: 600px;
+    height: 600px;
+}
+
+p, li {
+    font-size: 60px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
